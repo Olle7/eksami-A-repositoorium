@@ -19,7 +19,7 @@ this repository to you GitHub account, to do that please follow these steps:
 * In the first field `"Your old repository’s clone URL"` enter URL of this repository `https://github.com/tsotnekekelia/wad20-exam2-a`
 * In  the next field give it a name
 * Make it **Private**
-* And begin to import, it should take couple minutes
+* And begin to import, it should take few seconds
 * Add me as a collaborator to your new repository, [click here](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)
  to learn how
   * My `email` and `username` on github is: `cotne.kekelia@yahoo.com` and `tsotnekekelia`
