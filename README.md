@@ -12,7 +12,7 @@ npm run serve
 
 # Setup
 
-You will nee to [import](https://docs.github.com/en/free-pro-team@latest/github/importing-your-projects-to-github/importing-a-repository-with-github-importer) 
+You will need to [import](https://docs.github.com/en/free-pro-team@latest/github/importing-your-projects-to-github/importing-a-repository-with-github-importer) 
 this repository to you GitHub account, to do that please follow these steps:
 * Go to Github [import page](https://github.com/new/import)
   * **Note**: you have to be logged in to your GitHub account
