@@ -9,9 +9,18 @@
 
     export default {
         name: 'App',
-        components: {
-            Transactions
-        },
+        components: {Transactions},
+        computed: {
+          sortedTransactions: function () {
+            var l=this.concat().transactions.sort(function(a, b) {
+              if (a.amount< b.amount) return -1;
+              if (a.amount>b.amount) return 1;
+              return 0;
+            })
+            alert(l)
+            return l;
+        }
+      },
         data: function () {
             return {
                 transactions: [
