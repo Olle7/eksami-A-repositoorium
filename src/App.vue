@@ -1,6 +1,8 @@
 <template>
     <div id="app">
         <Transactions :transactions="transactions"/>
+        <Transactions :sortedTransactions="sortedTransactions"/>
+        <Transactions :computed2="computed2"/>
     </div>
 </template>
 
@@ -12,15 +14,16 @@
         components: {Transactions},
         computed: {
           sortedTransactions: function () {
-            var l=this.concat().transactions.sort(function(a, b) {
+            var l=this.transactions.concat().sort(function(a,b){
               if (a.amount< b.amount) return -1;
               if (a.amount>b.amount) return 1;
               return 0;
             })
-            alert(l)
+            //alert(l)
             return l;
-        }
-      },
+         },
+          computed2: function () {return "computed example2";}
+        },
         data: function () {
             return {
                 transactions: [

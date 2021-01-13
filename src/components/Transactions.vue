@@ -1,7 +1,7 @@
 <template>
 
     <table>
-      <p>{{sortedTransactions}}</p>
+      <p>Should be "computed example2":"{{computed2}}"</p>
         <tr>
             <td>From / To</td>
             <td id="amount-label">Amount</td>
@@ -11,7 +11,6 @@
         <td v-if="transaction.type === 'spending'" style="color: red">{{transaction.to}}</td>
         <td v-if="transaction.type === 'spending'" style="color: red">{{transaction.amount}}</td>
         <td v-if="transaction.type === 'spending'" style="color: red">{{transaction.currency}}</td>
-
 
         <td v-if="transaction.type === 'income'" style="color: green">{{transaction.from}}</td>
         <td v-if="transaction.type === 'income'" style="color: green">{{transaction.amount}}</td>
@@ -31,9 +30,12 @@
     export default {
         name: 'HelloWorld',
         props: {
-            transactions: Array
-        }
+            transactions: Array,
+            computed2:String
+        },
+        computed:{computed1: function () {return "computedi näide 1";}}
     }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
